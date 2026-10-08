@@ -14,7 +14,7 @@ namespace SlotBooking
         private void InitializeComponent()
         {
             this.grpSeats        = new System.Windows.Forms.GroupBox();
-            this.pnlSeats        = new System.Windows.Forms.Panel();
+            this.pnlSeats        = new System.Windows.Forms.TableLayoutPanel();
             this.grpStats        = new System.Windows.Forms.GroupBox();
             this.lblTimeSlot     = new System.Windows.Forms.Label();
             this.cboTimeSlot     = new System.Windows.Forms.ComboBox();
@@ -36,7 +36,19 @@ namespace SlotBooking
             this.grpSeats.TabStop = false;
             this.grpSeats.Text = "Sơ đồ vị trí (4 × 5)";
 
-            // pnlSeats — Panel chứa 20 button sinh động
+            // pnlSeats — ma trận 4 hàng, 5 cột; các nút sinh trong Form_Load.
+            this.pnlSeats.ColumnCount = 5;
+            this.pnlSeats.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlSeats.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlSeats.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlSeats.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlSeats.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlSeats.RowCount = 4;
+            this.pnlSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.pnlSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.pnlSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.pnlSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.pnlSeats.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSeats.Location = new System.Drawing.Point(3, 19);
             this.pnlSeats.Name = "pnlSeats";
@@ -138,6 +150,7 @@ namespace SlotBooking
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BT4 - Sơ đồ chọn vị trí chỗ ngồi / Đặt bàn";
+            this.Load += new System.EventHandler(this.MainForm_Load);
 
             this.grpSeats.ResumeLayout(false);
             this.grpStats.ResumeLayout(false);
@@ -146,7 +159,7 @@ namespace SlotBooking
         }
 
         private System.Windows.Forms.GroupBox grpSeats;
-        private System.Windows.Forms.Panel pnlSeats;
+        private System.Windows.Forms.TableLayoutPanel pnlSeats;
         private System.Windows.Forms.GroupBox grpStats;
         private System.Windows.Forms.Label lblTimeSlot;
         private System.Windows.Forms.ComboBox cboTimeSlot;

@@ -1,0 +1,67 @@
+{
+  "exercise": "4",
+  "culture": "vi-VN",
+  "results": [
+    {
+      "name": "no_dynamic_buttons_before_load",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "20_buttons",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "grid_4x5",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "load_idempotent",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "locked_seat_ignored",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "no_seats_warning",
+      "pass": true,
+      "actual": "OK\r\n\r\nBạn chưa chọn vị trí nào."
+    },
+    {
+      "name": "morning_two",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "evening_two",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "cancel_all",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "confirm_booking",
+      "pass": true,
+      "actual": "OK\r\n\r\nĐặt thành công!\n\nKhung giờ: Tối (150.000đ)\nVị trí: A1\nSố lượng: 1\nTổng tiền: 150.000 VNĐ"
+    },
+    {
+      "name": "confirmed_locked",
+      "pass": true,
+      "actual": null
+    },
+    {
+      "name": "confirmed_seat_ignored",
+      "pass": true,
+      "actual": null
+    }
+  ],
+  "date": "2026-10-08"
+}
