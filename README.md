@@ -4,9 +4,35 @@
 
 - **Họ và tên:** Phạm Tuấn Thành
 - **Mã số sinh viên:** 24810320264
-- **Lớp:** [Chờ xác nhận lớp]
+- **Lớp:** D19QTANM1
 - **Tên môn học:** Lập trình C# / Windows Forms
 - **Tên bài tập:** Bài 4 — Sơ đồ chọn vị trí chỗ ngồi / Đặt bàn
+
+---
+
+## KẾT QUẢ THỰC HÀNH
+
+Ảnh chụp từ ứng dụng chạy thực tế trên Windows trong lần kiểm thử ngày **08/10/2026**.
+
+### 1. Ảnh màn hình Giao diện chính
+
+![Giao diện chính](./screenshots/main_ui.png)
+
+Sơ đồ 20 vị trí theo ma trận 4 hàng × 5 cột; A3, A8 và A14 là các vị trí mẫu đã khóa.
+
+### 2. Ảnh màn hình Chức năng thực thi / Kết quả
+
+![Thực thi chức năng](./screenshots/execution_result.png)
+
+Sau khi xác nhận đặt A1, vị trí này chuyển sang màu đỏ và bị khóa; số chỗ đang chọn trở về 0.
+
+### 3. Ảnh màn hình Kiểm tra lỗi (Validation)
+
+![Kiểm tra lỗi](./screenshots/validation_error.png)
+
+Bấm Xác nhận đặt khi chưa chọn vị trí: chương trình thông báo “Bạn chưa chọn vị trí nào.”
+
+---
 
 ## MÔ TẢ BÀI TẬP
 
@@ -65,22 +91,6 @@ Xem [bảng kiểm thử](./docs/TESTING.md) và [kết quả chạy](./docs/tes
 
 A3, A8, A14 là ghế mẫu đã khóa. Ghế đã đặt bị khóa trong lần chạy hiện tại, dùng chung cho hai lựa chọn giá; chưa có cơ sở dữ liệu đặt chỗ theo ngày/giờ.
 
-## KẾT QUẢ THỰC HÀNH
-
-### 1. Giao diện chính
-
-![Giao diện chính](./screenshots/main_ui.png)
-
-### 2. Chức năng thực thi / Kết quả
-
-![Thực thi chức năng](./screenshots/execution_result.png)
-
-### 3. Kiểm tra lỗi / Validation
-
-![Kiểm tra lỗi](./screenshots/validation_error.png)
-
-Thư mục `screenshots/` dùng để lưu ảnh chạy thực tế. Giữ đúng tên ảnh trên để README hiển thị trực tiếp trên GitHub.
-
 ## QUY TRÌNH NỘP VÀ PUSH
 
 Repo đã được khởi tạo trên nhánh `main` và liên kết `origin`. Sau khi thay đổi code, README hoặc screenshot, chạy:
@@ -99,9 +109,9 @@ git push -u origin main
 ## CHECKLIST TRƯỚC KHI NỘP
 
 - [x] README có họ tên và MSSV.
-- [ ] README đã điền lớp thật.
-- [ ] `screenshots/` có đủ 3 ảnh chạy thực tế.
-- [ ] Ảnh hiển thị trực tiếp trên trang chính GitHub.
+- [x] README đã điền lớp D19QTANM1.
+- [x] `screenshots/` có đủ 3 ảnh chạy thực tế.
+- [x] Ảnh hiển thị trực tiếp trên trang chính GitHub.
 - [x] `.gitignore` loại tệp build và cấu hình cá nhân của Visual Studio.
 - [x] Repository Public.
-- [x] Mã nguồn bản sửa và tài liệu đã commit/push lên nhánh `main`.
+- [x] Mã nguồn, README và ảnh đã commit/push lên nhánh `main`.

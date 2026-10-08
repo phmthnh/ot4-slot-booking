@@ -28,4 +28,4 @@ Kết quả chi tiết: [test-results.json](./test-results.json).
 - [ ] Mở solution bằng Visual Studio 2026, chọn MainForm.cs → Shift+F7 và kiểm tra kéo thả trong Toolbox.
 - [ ] Chạy F5, đi qua các bước ở README bằng bàn phím/chuột.
 - [ ] Kiểm tra giao diện ở DPI/cỡ màn hình đang dùng.
-- [ ] Đối chiếu ảnh screenshot với kết quả chạy thực tế.
+- [x] Đối chiếu đủ 3 ảnh screenshot với kết quả chạy thực tế ngày 08/10/2026.
